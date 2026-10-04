@@ -1,0 +1,76 @@
+{
+  "model_name": "Gradient Boosting (HistGB)",
+  "trained_at": "2026-10-04T14:24:35",
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temp diff [K]",
+    "Power [W]"
+  ],
+  "random_state": 42,
+  "split": "80/20 stratified; 5-fold stratified CV on train",
+  "dataset": {
+    "rows": 10000,
+    "failures": 339,
+    "source": "UCI AI4I 2020 (id 601)"
+  },
+  "metrics_test": {
+    "accuracy": 0.988,
+    "precision": 0.8056,
+    "recall": 0.8529,
+    "f1": 0.8286,
+    "roc_auc": 0.9689
+  },
+  "feature_ranges": {
+    "Air temperature [K]": [
+      295.3,
+      304.5,
+      300.1
+    ],
+    "Process temperature [K]": [
+      305.7,
+      313.8,
+      310.1
+    ],
+    "Rotational speed [rpm]": [
+      1168.0,
+      2886.0,
+      1503.0
+    ],
+    "Torque [Nm]": [
+      3.8,
+      76.6,
+      40.1
+    ],
+    "Tool wear [min]": [
+      0.0,
+      253.0,
+      107.0
+    ],
+    "Temp diff [K]": [
+      7.599999999999966,
+      12.100000000000023,
+      9.800000000000011
+    ],
+    "Power [W]": [
+      1148.4406104462846,
+      10469.923004765633,
+      6272.294452647142
+    ]
+  },
+  "types": [
+    "H",
+    "L",
+    "M"
+  ],
+  "risk_thresholds": {
+    "medium": 0.3,
+    "high": 0.6,
+    "note": "Illustrative defaults on UNCALIBRATED probabilities; tune with real maintenance costs."
+  },
+  "version": "2026-10-04"
+}

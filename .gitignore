@@ -1,0 +1,16 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+env/
+.env
+.streamlit/secrets.toml
+.DS_Store
+*.log
+
+predictions.db
+
+app backup phase1.py.py
+app phasel_stable.py
+app backup phasel.py.py
+app-phasel stable.py
